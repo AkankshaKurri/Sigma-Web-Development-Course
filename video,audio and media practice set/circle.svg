@@ -1,0 +1,8 @@
+<!--Svg mei hume ek vode likhna padega warna image load nhi hoga-->
+<!--Code ke liye browser pe jaa aur search kar "svg file not showing in browser-->
+<!--Fir jo code aayega woh copy kar aur paste kar-->
+<!--Fir image load hoga-->
+<!--You need to add xmlns="http://www.w3.org/2000/svg" as an attribute of the root <svg> element and while you're there you might as well add xmlns:xlink="http://www.w3.org/1999/xlink" too.-->
+<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+         <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="pink"/>
+</svg>

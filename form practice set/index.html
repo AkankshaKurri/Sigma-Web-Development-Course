@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action="post">
+    <div>    
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" autofocus pattern="[a-zA-Z0-9]+">
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+    </div>    
+
+    <div>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <div>
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="Drawing">
+        <label for="hobbies">Drawing</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="Dancing">
+        <label for="hobbies">Dancing</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="Singing">
+        <label for="hobbies">Singing</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="Reading">
+        <label for="hobbies">Reading</label>
+    </div>
+
+    <div>
+        <label for="city">Select your city</label>
+        <select name="city" id="city" required>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Thane">Thane</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Pune">Pune</option>
+            <option value="Amravati">Amravati</option>
+            <option value="Solapur">Solapur</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Aurangabad">Aurangabad</option>
+            <option value="Kolhapur">Kolhapur</option>
+            <option value="Akola">Akola</option>
+            <option value="Nanded">Nanded</option>
+            <option value="Ahmednagar">Ahmednagar</option>
+            <option value="Jalgaon">Jalgaon</option>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="Chandrapur">Chandrapur</option>
+            <option value="Dhule">Dhule</option>
+            <option value="Latur">Latur</option>
+            <option value="Sangli">Sangli</option>
+            <option value="Satara">Satara</option>
+            <option value="Ratnagiri">Ratnagiri</option>
+            <option value="Wardha">Wardha</option>
+            <option value="Beed">Beed</option>
+            <option value="Alibaug">Alibaug</option>
+            <option value="Yavatmal">Yavatmal</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="comment">Enter your comments</label>
+        <br>
+        <textarea name="comment" id="comment" cols="20" rows="10" placeholder="Enter your comments here"></textarea>
+    </div>
+
+    <div>
+        <input type="button" value="Submit">
+    </div>                   
+
+    </form>
+</body>
+</html>

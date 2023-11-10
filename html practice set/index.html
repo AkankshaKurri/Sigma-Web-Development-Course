@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the description about sigma web development course">
+    <title>my first website</title>
+    <!--link mei bhi do attribute hai. 1.href(hreference), 2.rel(relaive)-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Client and Browser and Server</h1>
+    <!--Pehle client request bhejta hai(browser ke dwara) server ko ke mujhe yeh website chahiye.Phir server dhundke woh website ka pura code bhejta hai browser ko.Browser code ko website create karke client ko bhejta hai.-->
+    <hr>
+
+
+    <h1>Backend information</h1>
+    <!--The backend is the server side of the website.
+It stores and arranges data,and also makes sure everything on the client side works fine.
+It is part of the website that you cannot see and interact with.
+It is the portion of the software that does not come in direct contact with users.-->
+<hr>
+
+
+
+<h1>Accessing website through mobile</h1>
+<!---
+    Mobile mei website access karne ke liye command prompt mei jane ka.Aur wahape "ipconfig" likhne ka,fir enter karne ka.IPv4 address ko copy karne ka."Live preview" mei jane ka wahape settings mei jaa aur "IpHost" karke rahega wahape paste kar.Phir "Wifi" ke settings mei jane ka aur "private network" par click karne ka.Pjir mobile mei woh "url" type kar.Phir tera website aa jaayega.-->
+<hr>
+
+
+<h1>Paragraph tag</h1>
+<!--Paragraphs likh ne ke liye p ka use karte hai.Aur dummy paragraph ke liye "lorem34/lorem10" use kaarte hai.Example niche hai-->
+<p>1.abcdefghijklmnopqrstuvwxyz</p>
+<p>2.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui modi nisi quaerat, doloribus sequi optio, dicta distinctio velit dolore rem dolores blanditiis. Dolores quas vero provident consequuntur voluptates, impedit iusto harum sapiente. Iure, natus.</p>
+<!--paragraph tag ka ek attribute hai --"style".woh hum use kar kar sakte hai background colour ke liye,textcolour ke liye.Isko "inline css" bolte hai.Example niche hai-->
+<p style="background-color: palevioletred;">1.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, fugit?</p>
+<p style="color: black;">2.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi.</p>
+<p style="background-color: blueviolet; color: black;">3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptatem!</p>
+<hr>
+
+
+<!--Headings ke liye "h1 h2 h3 h4 h5 h6" use kar sakte hai.Example niche hai.-->
+<h1>Heading tag</h1>
+<h1>1.abcdefghijklmnopqrstuvwxyz</h1>
+<h2>2.abcdefghijklmnopqrstuvwxyz</h2>
+<h3>3.abcdefghijklmnopqrstuvwxyz</h3>
+<h4>4.abcdefghijklmnopqrstuvwxyz</h4>
+<h5>5.abcdefghijklmnopqrstuvwxyz</h5>
+<h6>6.abcdefghijklmnopqrstuvwxyz</h6>
+<hr>
+
+<h1>Anchor tag</h1>
+<!--anchor tag link banane ke liye kaam aat hai.Link ko click karte hi hum woh website pe chale jate hai.Example niche hai-->
+<!--(_blank)->Load the URL into a new browsing context. This is usually a tab, but users can configure browsers to use new windows instead.Anchor tag mein 1 attribute use kar sakte haitarget).-->
+<a target="_blank""https://www.google.com/">Google</a>
+<hr>
+<a href="https://www.codewithharry.com/">CodeWithHarry</a>
+<hr>
+<a href="https://www.youtube.com/">Youtube</a>
+<hr>
+<a href="https://web.whatsapp.com/">Whatsapp online Login</a>
+<hr>
+<a href="https://www.stackoverflow.com/">stackoverflow</a>
+<hr>
+
+<h1>Image Tag</h1>
+<!--Image tag use karte hai image dikhane ke liye website pe.Image tag ke 3 attributes hai-1.src,2.alt,3.height(width bhi hai,lekin hume use nahi karna chahiye.)-->
+<img src="bappa.png" alt="Ganpati bappa" height="200">
+<hr>
+
+<h1>Table tag</h1>
+<table border="1">
+   <thead>
+        <caption>STUDENT DETAILS</caption>
+        <th>Roll no</th>
+        <th>Name</th>
+        <th>Stream</th>
+   </thead>
+   <tbody>
+        <tr>
+            <td>1</td>
+            <td>Akanksha</td>
+            <td>BscIT</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lalit</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Uma</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ramesh</td>
+            <td>Science</td>
+        </tr>
+   </tbody>
+   <tfoot>
+       <tr>
+          <td colspan="3">
+            Congratulations students.ALL THE BEST for your future.
+          </td>
+       </tr>
+   </tfoot>
+</table>
+<hr>
+
+<h1>List tag</h1>
+<!--list tag 2 types ke hote hai.(1.Unordred lists,2.Ordered lists.Disc is default bullet style.-->
+<dt>Unordered Lists</dt>
+<dt>First type--default bullet style is disc</dt>
+<ul>
+    <li>Akanksha</li>
+    <li>Ramesh</li>
+    <li>Uma</li>
+    <li>Lalit</li>
+ </ul>
+ <dt>Second Type--bullet style is square</dt>
+<ul type="square">
+   <li>Akanksha</li>
+   <li>Ramesh</li>
+   <li>Uma</li>
+   <li>Lalit</li>
+</ul>
+<dt>Third Type--bullet style is circle</dt>
+<ul type="circle">
+    <li>Akanksha</li>
+    <li>Ramesh</li>
+    <li>Uma</li>
+    <li>Lalit</li>
+ </ul>
+
+ <dt>Ordered Lists</dt>
+ <dt>First type--Arabic numerals is default type</dt>
+<ol>
+    <li>Akanksha</li>
+    <li>Ramesh</li>
+    <li>Uma</li>
+    <li>Lalit</li>
+</ol>
+<dt>Second type--Uppercase Roman numerals</dt>
+<ol type="I">
+    <li>Akanksha</li>
+    <li>Ramesh</li>
+    <li>Uma</li>
+    <li>Lalit</li>
+</ol>
+<dt>Third type--Lowercase Roman numerals</dt>
+<ol type="i">
+    <li>Akanksha</li>
+    <li>Ramesh</li>
+    <li>Uma</li>
+    <li>Lalit</li>
+</ol>
+<dt>Fourth type--Lowercase Alphabetical letters</dt>
+<ol type="a">
+    <li>Akanksha</li>
+    <li>Ramesh</li>
+    <li>Uma</li>
+    <li>Lalit</li>
+</ol>
+<dt>Fifth type--Uppercase Alphabetical letters</dt>
+<ol type="A">
+    <li>Akanksha</li>
+    <li>Ramesh</li>
+    <li>Uma</li>
+    <li>Lalit</li>
+</ol>
+<hr>
+
+
+<h1>Definition List</h1>
+<dl>
+    <dt>HTML</dt>
+    <dd>Hyper Text Markup Language.This is the standard language for creating the webpage.</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets.A Stylesheet language used for describing the look and formatting of a document written in HTML.</dd>
+    <dt>Javascript</dt>
+    <dd>A Programming Language commonly used in web development to add interactive features.</dd>
+    <dt>SEO</dt>
+    <dd>SEO ke baare mei information chahiye toh "web.dev" website par jaa aur uske andar information padh le.</dd>
+    <dt>Inline Elements</dt>
+    <dd>Inline elements do not start on a new line and only take up as much as width as necessary</dd>
+    <dt>Block-level Elements </dt>
+    <dd>Block-level Elements are those that start on a new line and take up the entire width of their container by default.They essentially claim all the horizontal space for themselves,pushing any content that comes after them to a new line.</dd>
+</dl>
+<hr>
+
+<h1>Div and Block-level elements</h1>
+<div>Div is block-level element</div>
+<span>Span is inline element.</span>
+<br>
+<br>
+<dt>This are list of Block-level elements(Most commonly used elements first)</dt>
+<dd>
+    1.div:A generic container for flow content.<br>
+    2.p:paragraph<br>
+    3.h1,h2,h3,h4,h5,h6:headings<br>
+    4.ul:unordered lists<br>
+    5.ol:ordered lists<br>
+    6.li:List item<br>
+    7.form:A section containing form controls<br>
+    8.table:A section containing table controls<br>
+    9.section:A standalone section of a document.<br>
+    10.header:A container for introductory content or a set of navigational links.<br>
+    11.footer:Footer of a section page.<br>
+    12.nav:A section of a page that contains navigation links.<br>
+    13.article:A self-contained composition in a document.<br>
+    14.aside:A section of a page that contains information indirectly  related to the main<br>
+    15.main:The main content of a document<br>
+    16.fieldset:A set of form controls grouped under a common Name<br>
+    17.blockquote:A block of text tht is aquotation from another source.<br>
+    18.pre:Preformatted text<br>
+    19.canvas:A container used to draw graphics via Javascript<br>
+    20.dl:Description List<br>
+    21.dt:Term in a description List<br>
+    22.dd:Description in a description list<br>
+</dd>
+<br>
+<dt>This is a list of Inline Elements(Most commonly used first)</dt>
+<dd>
+    1.a:anchor or hyperlink.<br>
+    2.img:Image.<br>
+    3.span:Generic inline container.<br>
+    4.label:Label for a form element.<br>
+    5.strong:Strong emphasis.<br>
+    6.em:Emphasized text.<br>
+    7.br:Line break.<br>
+    8.code:Code snippet.<br>
+    9.b:Bold text.<br>
+    10.i:Italic text.<br>
+    11.u:Underline text.<br>
+    12.small:Smaller text.<br>
+    13.sub:Subscript.<br>
+    14.sup:Superscript.<br>
+    15.mark:Marked or highlited text.<br>
+    16.q:Short inline quotation.<br>
+    17.cite:Citation.<br>
+    18.kbd:Keyboard input.<br>
+    19.samp:Sample output.<br>
+    20.var:Variable in mathematical expression or programming context.<br>
+    21.time:Time.<br>
+    22.abbr:Abbreviation.<br>
+    23.data:Machine-readable translation of content.<br>
+    24.acronym:Acronym(Not supported in HTML5).
+</dd>
+<hr>
+
+
+<h1><dt>Semantic Tags</dt></h1>
+<dd>
+Semantic tags add meaning to your HTML. They tell both the browser and the developer what kind of content is being presented.<br>
+Here are some of the key semantic tags you must know about:<br>
+1.header: Used to represent the top section of a web page, often containing headings, logos, and navigation.<br>
+2.nav: Signifies a navigation menu on a web page.<br>
+3.article: Indicates a self-contained piece of content, such as a blog post or news article.<br>
+4.section: Represents a thematic grouping of content on a web page.
+5.aside: Typically used for sidebars or content that is tangentially related to the main content.<br>
+6.footer: Represents the footer of a web page, usually containing copyright information and contact details.<br>
+7.figure and figcaption: Used for embedding images, diagrams, or charts, along with a caption.<br>
+8.main: Signifies the main content area of a web page.
+9.time: Used to represent time-related information, like dates and times.
+</dd>
+<br>
+<img src="SemanticImage.png" alt="Semantic Tag and Non Semantic Tag in Html" height="500" width="800">
+<hr>
+
+<h1><dt>HTML Entities</dt></h1>
+<dd>
+    HTML entities are used to represent special characters in a format that the browser can understand. They start with an ampersand (&) and end with a semicolon (;).<br>
+    Here are some reasons:<br>
+    1.Reserved Characters: Characters like <, >, and & are reserved in HTML.<br>
+    2.Special Symbols: For symbols like ©, ®, or mathematical symbols.<br>
+    3.Non-Breaking Spaces: To create white spaces that won't break into a new line.<br>
+    -->lt for <       <br>
+    -->gt  for >       <br>
+    -->amp for &       <br>
+    -->nbsp for a non-breaking space   <br>
+    -->copy for ©       <br>
+</dd>
+<br>
+1.10 &lt; 20  <!--less than sign-->
+<br>
+2.20 &gt; 10  <!--greater than sign-->
+<br>
+3.10 &amp; 20  <!--amperand sign-->
+<br>
+4.Copyright &copy; 2023   <!--copyright sign-->
+<br>
+5.Akanksha &nbsp;&nbsp;&nbsp;&nbsp;Ramesh&nbsp;&nbsp;&nbsp;&nbsp;Kurri <!--Space sign.Jitne baar nbsp likhegi utne baar space aayega..-->
+
+
+<!--Pre tag bhi use kar sakti hai usmei space bhi add hota hai..-->
+<pre>
+6.Akanksha            Ramesh          Kurri
+</pre>
+<hr>
+
+<dt><h1>HTML Quotation Tag</h1></dt>
+-->The use of quotations is common in textual content. HTML provides specific tags to handle this: "blockquote" for block quotations and "q" for inline quotations. In this blog, we'll explore these tags, their attributes, and how to style them.
+<br>
+-->The "blockquote" and "q" tags serve to define quotations in HTML. While "blockquote" is used for longer, block-level quotes, "q" is used for shorter, inline quotes.
+<br>
+-->They provide semantic meaning to your quotations, making it easier for search engines to understand the context and relevance of the content.
+<br>
+-->cite: Specifies the URL of the quote's source.
+<br>
+
+<blockquote cite="https://parade.com/980089/marynliles/stay-positive-quotes/">
+      <q>Say something positive, and you’ll see something positive.</q>
+</blockquote>
+<hr>
+
+<h1><dt>Obselete Tags</dt></h1>
+<dd>
+Obsolete tags are HTML elements that are no longer recommended for use. They may lack support in modern browsers and are likely to be phased out entirely in future versions of HTML.
+<br>
+-->Compatibility Issues: Not supported by all modern browsers.<br>
+-->Accessibility: This may not meet current web accessibility standards.<br>
+-->Maintenance: Makes future updates difficult.<br>
+Example:
+<br>
+1.font<br>
+2.center<br>
+3.u(underline)<br>
+
+<!-- OLD WAY -->
+<font size="9" color="purple" face="verdana">1.Akanksha Ramesh Kurri</font>
+<br>
+<center>2.Uma Kurri</center>
+<u>3.Lalit Kurri</u>
+<br>
+
+<!-- NEW WAY -->
+<span style="color:rgb(0, 0, 0); font-size: xx-large; font-family: 'Times New Roman', Times, serif;">1.Akanksha Ramesh Kurri</span>
+<br>
+<div style="text-align: center;">2.Uma Kurri</div>
+<span style="text-decoration:underline">3.Lalit kurri</span>
+</dd>
+<hr>
+
+<h1><dt>HTML Code Tag</dt></h1>
+<dd>
+    
+-->The "code" tag is a semantic HTML tag that's used for displaying code snippets. It can be used both inline and within a block-level element like "pre".<br>
+-->Semantic Meaning: Provides semantic value to the enclosed code.<br>
+-->Readability: This makes it easier for both browsers and developers to understand that the text is code.<br>
+-->Styling: Easier to style and highlight with CSS or JavaScript libraries like Prism.<br>
+<br>
+
+<!-- The most straightforward way to use the <code> tag is inline for short code snippets: -->
+<code>
+    1.printf("hello world")
+</code>
+<br>
+
+<!-- For multiline code snippets, it's common to combine the <code> tag with the <pre> tag: -->
+<pre>
+    <code>
+   2.&lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title>Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+</pre>
+</dd>
+<hr>
+
+<h1><dt>Character Sets</dt></h1>
+<dd>
+A character set is a set of symbols and characters that a computer uses to represent text. In HTML, specifying the correct character set ensures that text is displayed properly across different browsers and platforms.<br>
+Using the correct character set is crucial for:<br>
+-->Accurate Rendering: To ensure that browsers correctly display your text.<br>
+-->Multi-language Support: To display text in various languages and alphabets.<br>
+-->Data Integrity: To make sure the data sent and received remains consistent.<br>
+-->The character set is generally specified using the "meta" tag within the "head" section of an HTML document<br>
+Here are some commonly used character sets:<br>
+* UTF-8: Universal Character Set, 8-bit. It can represent any character in the Unicode standard.<br>
+* ISO-8859-1: Western Alphabet.<br>
+* ASCII: American Standard Code for Information Interchange.<br>
+1.&lt;meta charset="UTF-8"&gt;<br>
+2.&lt;meta charset="ISO-8859-1"&gt; or<br>
+&lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;<br>
+3.&lt;meta charset="ASCII"&gt;<br>
+--->Understanding and specifying the correct character set is crucial for creating web pages that render text accurately across different platforms and languages. UTF-8 is the most commonly used and recommended character set due to its wide applicability and support.
+</dd>
+<hr>
+
+<script src="script.js"></script>
+</body>
+</html>

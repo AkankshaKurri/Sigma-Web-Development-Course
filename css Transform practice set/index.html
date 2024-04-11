@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSFORM</title>
+    <style>
+        .container{
+            border: 2px solid purple;
+            height:50vh;
+        }
+        .box{
+            background-color: violet;
+            border: 2px solid black;
+            height: 55px;
+            width: 55px;
+            /* transform:rotate(40deg); */             /* the box will rotate 40 degree  */
+           /* transform: rotate(0);*/                  /*it will not rotate */
+           /* transform: rotate(0.125turn);*/          /*it will rotate 45 degree */
+           /* transform: rotate(0.25turn);*/           /*it will rotate 90 degree */
+           /* transform:rotate(0.5turn);*/             /*it will rotate 180 degree */
+           /* transform: rotateX(40deg);*/             /*it will rotate along x-axis */
+           /* transform: rotateY(40deg); */            /*it will rotate along y-axis */
+           /* transform: rotateZ(70deg); */             /*it will rotate along z-axis */
+           /* transform: scale(1.9); */                /*it will booom out of the container */
+           /* transform: scaleX(1.9);*/                /*it will booom out of the container along x-axis */
+           /* transform: scaleY(1.9); */              /*it will booom out of the container along y-axis */
+           /* transform: skew(9deg); */               /*skew can be applied in x-axis and y-axis(no z-axis)*/
+           /* transform: skewY(15deg); */           
+           /* transform: skewX(29deg); */
+           /* transform: translate(200%); */         /*box will shift*/ 
+           /* transform: translateX(100%); */
+           /*transform: translateX(-100%); */
+           /* transform: translateY(100%); */ 
+           /*transform: scaleX(2.9) translateX(-50%) skew(9deg);*/    /*you can also write in one line*/
+           /* transform: scale3d(); */
+           /* transform: scaleZ(); */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <div>
+    <img src="img1.png" alt="2D" height="245px" width="345px">
+    <img src="img2.png" alt="3D" height="245px" width="345px">
+    </div>   -->
+    <div class="container">
+        <div class="box">box</div>
+    </div>  
+</body>
+</html>

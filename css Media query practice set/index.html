@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body{
+            background-color: violet;
+        }
+
+        /*
+        Syntax of media:
+           @media not|only mediatype and(expressions){
+            CSS Code here
+           }
+        */
+
+        @media only screen and (max-width:455px){
+            /*jaise hi screen ka width 455px se kam hoga  background colour yellow ho jaayega */                           
+            body{
+                background-color:yellow;
+            }
+
+            /*jaise hi screen ka width 455px se kam hoga boxes jo horizantally hai...woh vertically align hogi*/
+            .boxes{
+                flex-direction: column;
+            }
+         } 
+         
+        
+        /*jaise hi screen ka width 455px se jyada hoga background colour yellow ho jaayega
+         @media only screen and (min-width:455px){
+            body{
+                background-color: yellow;
+            }
+         } 
+         */
+
+
+        /*/ jaise hi screen portrait hoga, border black aayega
+         @media only screen and (orientation:portrait){
+            body{
+                border:2px solid black;
+            }
+         } */
+        
+
+         /*jaise hi screen landscape hoga, border black aayega**/
+         @media screen and (orientation:landscape){
+            body{
+                border:2px solid black;
+            }
+         }
+         
+        
+         .boxes{
+            display: flex;
+         }
+         
+         .box{
+            width: 344px;
+            height: 344px;
+            background-color: goldenrod;
+            padding: 3px;
+            margin:3px;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello</h1>
+    </div>
+    <div class="boxes">
+        <div class="box">I am a box1</div>
+        <div class="box">I am a box2</div>
+        <div class="box">I am a box3</div>
+    </div>
+</body>
+</html>

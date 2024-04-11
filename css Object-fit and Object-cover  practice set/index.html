@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover </title>
+    <style>
+    .container{
+        height:500px;
+        width:500px;
+        /* background-color: azure; */
+        border: 2px solid black;
+        /* background-image:url(bappa.png); */            /*yeh second way hai image iske andar hi apply karne ka aur baki sab apply karne ka*/
+        /* background-position: center center; */
+        /* background-position: top right; */
+        /* background-position: 50% 50%; */
+        background-image:url(small\ image.png);      
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+        background-repeat: no-repeat;
+        background-clip: border-box;              /*yeh nahi samjha*/
+        background-clip: content-box;       /*yeh nahi samjha*/
+        background-clip: padding-box;       /*yeh nahi samjha*/
+    }
+ 
+    /*yeh first way hai image div ke andar rakhne ka aur style ke through sab apply karne ka*/
+    /* img{
+        height:200px;
+        width:600px;
+        object-fit: cover;  /* image fit hogi container mei without changing the aspect ratio.Image aaju baju se cut hogi lekin aspect ratio maintain rahega*/
+        /* object-position:top;*/               /*you can also place the image where you want*/
+        /* object-position:bottom;*/            /*you can also place the image where you want*/
+        /* object-position: top left;*/         /*you can also place the image where you want*/
+        /* object-position: top right;*/        /*you can also place the image where you want*/
+        /* object-position: bottom left;*/      /*you can also place the image where you want*/
+        /* object-position: bottom right;*/     /*you can also place the image where you want*/
+        /* object-position: 10px 10px;*/        /* you can also provide in pixels also*/
+        /* object-position: 50% 50%;*/          /* you can also provide in percentage*/
+ 
+        /*object-fit:contain;*/                   /*image pura aayega aur khali jagah rahega(space)*/
+
+        /*object-fit: fill;*/                     /*image pura fill ho jaayega container mei*/
+
+        /* object-fit:scale-down; */              /*image chota ho jaayega*/        
+    /* } */ 
+   
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="bappa.png" alt="ganpati"> -->
+    </div>
+</body>
+</html>

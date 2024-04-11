@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box1{
+                border: 2px solid purple;
+                background-color:chartreuse;
+                margin: 34px;
+                padding: 45px;
+                display:flex;
+                justify-content: center;
+                box-shadow: 18px 20px 20px 5px rgb(0, 157, 31) /*box-shadow: h-offset v-offset blur spread color inset;*/
+        }
+
+        .text{
+               text-shadow: 4px 10px 1px grey;    /* text-shadow: h-offset v-offset blur color;*/
+               border:2px solid blue;    
+               border-radius: 12px;    /* border-radius automatically applies to outline also..*/
+               outline:2px solid black;   /*outline:width style color;*/   /*yeh border ki tarah hi hota hai..lekin outline se aap use bada ya chota karsakte ho...*/ /*agar apko border ke baad aur ek border chahiye toh aap outline use kar sakte ho... */
+               outline-offset: 12px; 
+               outline-style: groove;
+               outline-width: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- box-shadow is a popular CSS property that enables designers to add shadow effects around an element's frame. It can be used to give any element, be it a div, image, or button, a 3D feel or to emphasize on hover. -->
+    <!-- h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+    blur: The larger the value, the blurrier the shadow.
+    spread: Expands or shrinks the shadow size.
+    color: Defines the shadow color.
+    inset: Makes the shadow inner -->
+    <div class="box1">
+        I am a box
+    </div>
+
+    <!-- text-shadow is utilized to give shadows specifically to the text. -->
+    <!-- It can elevate the readability of the text or give it an elegant appearance. -->
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quasi dolor necessitatibus tenetur ducimus aliquid exercitationem doloribus voluptatem, molestiae accusamus sit porro ad.
+    </div>
+
+    <!-- An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements. -->
+    <!-- width: Sets the outline width.
+    style: Determines the style of the outline such as solid, dotted, or dashed.
+    color: Sets the outline color. -->
+
+    <!-- While both can visually appear similar, outlines differ from borders in a few ways: -->
+
+   <!-- Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+   Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+   Width: Borders can have varying widths on different sides, outlines have a uniform width.
+   Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot. -->
+
+
+</body>
+</html>

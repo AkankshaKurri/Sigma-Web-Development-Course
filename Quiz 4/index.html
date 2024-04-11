@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 4</title>
+    <style>
+        /* create a website which can change colours using CSS variables */
+    
+        :root{
+            --new_body_background_color:rgb(214, 255, 197);
+            --new_background_color:rgb(63, 245, 50);
+            --new_color:white;
+        }
+        /* :root{
+            --new_body_background_color:rgb(129, 170, 236);
+            --new_background_color:rgba(50, 86, 245, 0.566);
+            --new_color:white;
+        } */
+        /* :root{
+            --new_body_background_color:rgb(255, 228, 197);
+            --new_background_color:rgba(245, 157, 50, 0.566);
+            --new_color:white;
+        } */
+        /* :root{
+            --new_body_background_color:rgb(255, 238, 197);
+            --new_background_color:rgb(245, 222, 50);
+            --new_color:white;
+        } */
+        /* :root{
+            --new_body_background_color:rgb(237, 89, 89);
+            --new_background_color:rgb(240, 40, 0);
+            --new_color:white;
+        } */
+        /* :root{
+            --new_body_background_color:rgb(153, 134, 238);
+            --new_background_color:rgb(94, 67, 215);
+            --new_color:white;
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:var(--new_body_background_color)
+        }
+        .navbar{
+            /* background-color: black;
+            color: white; */
+            background-color: var(--new_background_color);
+            padding: 17px;
+        }
+
+        li{
+            display:inline;
+            padding: 13px;     
+        }
+
+        li a{
+            list-style: none;
+            text-decoration: none;
+            color: var(--new_color);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>

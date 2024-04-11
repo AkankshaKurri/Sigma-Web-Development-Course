@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 7</title>
+    <style>
+    .box{
+        background-color:darkcyan;
+        width: 100vw;
+        height: 90vh;
+        position:relative;
+        border-radius: 10px;
+    }
+
+    .circle{
+        background-color: blue;
+        position: absolute;
+        height: 105px;
+        width: 104px;
+        bottom:0;
+        left:0;
+        border-radius: 65px;
+        animation: xdirection 3s linear infinite,ydirection 0.3s ease-out infinite alternate;/*aternate matlab ek loop ke baad ek loop chalega*/
+    } 
+
+    @keyframes xdirection {
+       from{
+           left:0;
+       } 
+
+       to{
+          left: 100%;
+       }
+    }
+
+    @keyframes ydirection {
+        from{
+           bottom: 0;
+        }
+
+        to{
+           bottom: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle">
+        </div>
+    </div>
+</body>
+</html>

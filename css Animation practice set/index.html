@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+         .content{
+            background-color:whitesmoke;
+            height: 100vh;
+            width: 100vw;
+            color: black;
+            display:flex;
+        }
+
+        .sidebar{
+            /* background-color: black; */
+            color: antiquewhite;
+            height: 99vh;
+            width: 23vw;
+            /* animation-name: akankshasanimation; */
+            /* animation-duration: 3s; */
+            /* animation-timing-function: ease-in-out; */
+             /* animation-delay:1s; */
+             /* animation-iteration-count: 3; */                 /*box kitne baar chalna chahiye*/
+            /* animation-iteration-count:1; */                   /*infinite baar chalega box. */
+            /*animation-direction: alternate-reverse;*/
+            /*animation-play-state: running;*/                   /*jaise hi pause karenge woh box pause ho jaayega*/     
+            /*animation-fill-mode:forwards;*/                    /*box aage..aage.. badta jaayega aur rukh jaayega*/
+            /* animation-fill-mode: backwards;*/                 /*box aage..aage badega,colour change hoga, backward jaayega,default box banega(initial styles delete ho jaayega) */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;*/       /*syntax*/
+            animation:akankshasanimation 3s ease-in-out 1s infinite alternate,akanksha 6s ease-in-out 1s infinite;              /*shorthand property*/
+
+        }
+
+        @keyframes akankshasanimation{
+            from{
+                 background-color:black;
+            }
+            to{
+                background-color:darkcyan;
+                transform: translateX(174px);
+            }
+        }
+
+        @keyframes akanksha {
+            0%{
+                transform:rotateX(30deg);
+            }
+        }
+
+        .sidebar nav{
+           padding-left: 69px;
+        }
+
+        .sidebar nav ul li{
+            list-style: none;
+            font-size: 34px;
+            padding-bottom: 19px;
+        }
+
+        button {
+            margin-top: 8px;
+            margin-right: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .right_info{
+            margin-left: 183px;
+        }
+        .right_info h3{
+            font-weight: 200;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content ">
+        <div class="sidebar">
+            <button>
+                <img src="sidebar.png" alt="" height="20px">
+            </button> 
+            <nav>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li> 
+                </ul>
+            </nav>
+        </div>
+        <div class="right_info">
+            <h1>Main Content</h1>
+            <h3>This is the main content of the page</h3>
+        </div>  
+    </div>
+</body>
+</html>

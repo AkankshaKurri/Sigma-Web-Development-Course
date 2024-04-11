@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box{
+            width:40vw;
+            height:40vh;
+            border: 2px solid darkgreen;
+            background-color: greenyellow;
+            /*overflow:scroll;*/                  /*vertically scroll kar sakte ho aur horizantally bhi scroll kar sakte ho.....*/
+            overflow:auto;                      /*overflow hoga toh scrollbar aayega aur overflow nhi hoga toh scrollbar nhi aayega*/
+            /*white-space: nowrap;*/                     /*text niche nhi aayega....*/
+            /*text-overflow: ellipsis;*/                /*overflow jab auto rahega..aur text-overflow jab ellipses rahega....aur white-space no wraprahega.....toh box ke andar text hai na jab box khatam hone lagega na toh dot dot dot karke aayega*/
+            /*overflow:clip;*/                /*yeh bhi hidden jaisa hi hai....text dot dot karke aayega.....lekin scroll nhi kar sakte hai...*/
+            /*overflow-x:hidden;*/             /*x-axis mei scroll bar nhi aayega*/
+            /*overflow-y:scroll;*/              /*y-axis mei scroll aayega*/
+            /*overflow-x:scroll;*/              /*x-axis mei scroll  aayega*/
+            /*overflow-y:hidden;*/              /*y-axis mei scroll bar nhi aayega*/
+            overflow:hidden scroll;             /*ek hi line mei bhi likh sakte ho....pehle wal x hoga aur dusra wala y hoga.......*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, est. Assumenda veniam doloribus accusamus quisquam numquam reprehenderit doloremque. Commodi consectetur id officiis facilis, dicta autem nam est illum. Voluptatibus, enim Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sapiente quibusdam modi voluptatem incidunt consequuntur, dignissimos tempore repellat voluptates ullam nam accusantium. Autem, explicabo. Ullam rem quia possimus obcaecati placeat harum porro atque vero quasi fugit incidunt deleniti, eum reprehenderit nesciunt nemo omnis beatae quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium, sunt culpa cupiditate, eius tempora totam dignissimos dolores porro quisquam, sequi nobis? Earum excepturi eligendi tenetur beatae nemo ullam, porro maiores cumque illum animi corporis mollitia sint ea deserunt iste, exercitationem pariatur eveniet, impedit facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam inventore iure, velit voluptate veritatis expedita, assumenda reprehenderit neque ullam soluta dolorem laboriosam quaerat consequuntur corporis saepe eaque culpa accusantium possimus eum? Consectetur, fuga id incidunt quis possimus quam veniam natus expedita! Quas, sapiente architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta eum sit laborum sint cumque, repellendus cum veniam distinctio dignissimos nihil cupiditate vel consequuntur ipsa voluptates illo aperiam illum velit dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis in laudantium natus doloribus consequatur consequuntur, aliquid inventore fugiat cum temporibus, fugit modi veniam saepe animi, ipsum officiis? Voluptatum eaque, animi asperiores voluptas rerum similique aperiam nisi placeat, ipsam amet officiis? Voluptas delectus at omnis praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minima veniam ut, tempore adipisci omnis mollitia delectus molestiae quam harum, et quas rerum eveniet reprehenderit illo porro debitis corporis aliquid fugiat nulla aut quaerat? Praesentium nihil sed provident molestiae laborum placeat voluptas a veniam eum, dolore consequatur, cupiditate maxime! Nemo minus, quibusdam ad officiis in cupiditate.
+    </div>
+</body>
+</html>

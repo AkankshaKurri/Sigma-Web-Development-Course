@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* first child ko kuch apply karna hoga toh aise likhna padega.. */
+        /* .box:first-child{
+            background-color: violet;
+        } */
+
+        /* first line ko kuch apply karna hoga toh aise likhna padega... */
+        /* .box:first-line{
+            background-color:violet;
+        } */
+
+       /* boxes ke andar saare elements ko kuvh apply karna rahega,toh app universal selector ke through kar sakte ho.... */
+       /* .boxes *{
+        background-color: violet;
+        border:2px solid purple;
+        padding: 2px;
+        margin:7px;
+       } */
+
+       /* attribute selector */
+       /*jiska data-color=primary ho usko yeh  sab apply karega attribute selector*/
+       /* [data-color=primary]{
+           padding:45px;
+           margin:45px;
+       } */
+
+       /* attribute selector */
+       /* you can also use for other selectors.. */
+        /* .box , [data-color="primary"]{
+            padding:45px;
+            margin:45px;
+        } */
+
+        /* nth-child selector */
+        /* yeh starting "1" se hota hai..Aur jahape even number aayega wahape yeh sab apply karega nth-child selector*/
+        /* .box:nth-child(even) {
+            background-color: blue;
+            color: beige;
+        } */
+
+         /* nth-child selector */
+        /* yeh starting "1" se hota hai..Aur jahape odd number aayega wahape yeh sab apply karega nth-child selector*/
+        /* .box:nth-child(odd) {
+            background-color: blue;
+            color: beige;
+        } */
+
+         /* nth-child selector */
+        /* yeh starting niche se hota hai...aur jo bhi hum number  likhega wahape apply karega nth-selector */
+        /* .box:nth-last-child(1){
+            background-color: aqua;
+        } */
+
+        /* pseudo elements */
+        /* content ke pehle hum css ke through dynamically insert kar sakte hai */
+        .boxes:before{
+            content:"this is the content of the boxes";
+            color: red;
+        }
+
+        /* content ke ending mei hum css e trough dynamically insert kar sakte hai.. */
+        .boxes:after{
+            content: "this is the content of the boxes";
+            color: blue;
+        }
+
+        /* jab hum text ko select karengee toh yeh apply hoga */
+        ::selection{
+            background-color: blue;
+            color: beige;
+        }
+
+        /* box ke first-letter ko yeh apply hoga... */
+        .box::first-letter{
+            color: coral;
+            font-size: 50px;
+        }
+
+        /* input::placeholder ko yeh sab apply kiya haayega */
+         input::placeholder{
+            color: blue;
+        }
+</style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam doloribus illum soluta consequatur corrupti eligendi eaque. At nostrum vero, natus dolorem, esse ea eum accusantium tenetur totam temporibus quidem minus eos odio? Enim consequuntur consequatur, corrupti quidem ex animi eveniet unde tenetur quae mollitia.</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div><input type="text" placeholder="Enter your name"></div>
+    </div>
+</body>
+</html>

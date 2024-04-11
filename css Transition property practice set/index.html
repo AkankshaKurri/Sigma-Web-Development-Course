@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+         .content{
+            background-color:whitesmoke;
+            height: 100vh;
+            width: 100vw;
+            color: black;
+            display:flex;
+        }
+
+        .sidebar{
+            background-color: black;
+            color: antiquewhite;
+            height: 99vh;
+            width: 23vw;
+            transition-property:transform,background-color ;             
+            transition-timing-function:ease-in-out;
+            transition-delay:0.5s ;
+            transition-duration:1s ;                        /* yeh 1st way hai */
+
+            /* transition-property:all;
+            transition-timing-function:ease-in-out;
+            transition-delay:1s ;
+            transition-duration:3s ;  */                         /*yeh 2nd way hai --transition property "all* karenge toh sab  apply hoga */
+           
+            /* transition: all ease-in-out 1s 3s; */             /* shorthand property */
+
+        }
+
+        .translate{
+             transform: translateX(-114%) translateY(0%);   /*  isse hum  "sidebar" ko kahi bhi rajh sakte hai.translateX matlab x direction mei box shift hoga aap kitna percentage mention karoge brackets mei.translateY matlab y direction mei box shift hoga aap kitna percentage mention karoge. */
+             background-color: rgb(36 34 34 / 76%);            /*isse color change hoga...*/
+        }
+
+        .sidebar nav{
+           padding-left: 69px;
+        }
+
+        .sidebar nav ul li{
+            list-style: none;
+            font-size: 34px;
+            padding-bottom: 19px;
+        }
+
+        button {
+            margin-top: 8px;
+            margin-right: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .right_info h3{
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+    <div class="content ">
+        <div class="sidebar translate ">
+            <button>
+                <img src="sidebar.png" alt="" height="20px">
+            </button> 
+            <nav>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li> 
+                </ul>
+            </nav>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div class="right_info">
+            <h1>Main Content</h1>
+            <h3>This is the main content of the page</h3>
+        </div>  
+    </div>
+</body>
+</html>

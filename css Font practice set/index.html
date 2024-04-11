@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <!-- using "link" hum font type add kar sakte hai...-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* using "import".Here we are having only one type of font.*/
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        .red{
+            font-family:'Lobster', sans-serif;
+            font-size: larger;
+            color: crimson;
+            /* font-style: oblique; */
+            /* font-weight: 500; */                  /* text kitna jada hona chahiye*/
+            text-decoration:underline;               /* underline,overline wagere karna rahega toh...... */
+            text-decoration-color: blue;           /* text ke niche jo bhi karege uska colour e.g.underline*/
+            text-decoration-style: wavy;             /* text ke niche jo bhi karege woh kaisa hona chahiyee.g. wavy */
+            text-decoration-thickness: 5px;          /* text ke niche jo bhi karege uska thickness....*/
+            text-indent: 45px;                       /* jo bhi hum sentence likhte hai uske pehle kitna space hona chahiye*/
+         }
+
+         /* using link */
+         .blue{
+            font-family: 'Vina Sans', sans-serif;
+            font-size: larger;                  /*`font ki size kitna hona chahiye*/
+            color: blue;                  /*font ka colour konsa hona chahiye*/
+            border: 2px solid palegreen;
+            width: 545px;                    /* width of the box*/
+            text-overflow:ellipsis;              /*text kaise dikhna chahiye box mei*/
+            overflow:hidden;                 /*yeh jo text jo bahar aata hai box se woh kaise dikhna chahiye....*/
+            word-break: break-all;            /*box mei jo bhi text likhege humlog woh puri box ko use karega..e.g.agar word bhot bada hai.. space chota hai....toh aadha word wahape aayega aur aadha word niche aayega */
+         }
+
+         /* using "import" .Here we are having two types of fonts.*/
+         @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Poppins:ital,wght@1,900&display=swap');
+         .yellow{
+            font-family: 'Poppins', sans-serif;
+            font-family: 'PT Serif', serif;
+            font-size: larger;                     /*`font ki size kitna hona chahiye*/
+            color:darkgreen;                     /*font ka colour konsa hona chahiye*/
+         }
+
+         p{
+            line-height:2;   /*  line ke beech mei spacing.......    */
+            letter-spacing: 2px;     /* letter ke beech mei spacing........*/
+         }
+
+         h2{
+            /* agar text ko capitalize karna hai,text ko uppercase karna hai,text ko lowercase karna hai..... */
+            text-transform: capitalize;
+         }
+
+
+    </style>
+</head>
+<body>
+    <!-- ismei apun font wagere kis tarah se hota hai woh sab dekh sakte hai-->
+    <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+    <h1 style="text-align: center;">Fonts</h1>
+
+    <h2>about Fonts</h2>
+
+    <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero, commodi, nisi blanditiis hic nulla dignissimos quasi id harum quae ducimus nostrum provident voluptatem dolorem aliquam distinctio laudantium nemo possimus itaque? Et, omnis minus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quo officia fugit obcaecati illo modi aliquam quae, officiis dignissimos incidunt quibusdam corrupti, sapiente repudiandae saepe eligendi enim at ipsam nulla molestias dolore sint magnam. Esse sit necessitatibus quo ex. Aliquam consequatur hic doloremque architecto. Earum.</p>
+
+    <p class="blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio maxime aliquam ab! Temporibus dolor provident quaerat nisi ipsa ad laboriosam, dolore beatae esse maiores repellendus repudiandae similique ratione autem accusamus magni inventore corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quibusdam repellendus, nisi quaerat aliquid dolor rerum cumque, quam id odio nulla qui, maiores corrupti beatae ducimus. Quam quod fugiat dolorem, reiciendis rem deserunt maiores incidunt molestias quas cum ullam sequi quidem officiis voluptatem alias libero!</p>
+
+    <p class="yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita similique accusantium placeat adipisci illo nihil ex, dolorem hic culpa ipsam harum eveniet ducimus veritatis maiores vero quam laborum deleniti iste optio tenetur quis reiciendis?</p>
+
+    <!-- If you want to use font from google, then go to google,Type "Google fonts",click on your favourite font,then vlick on "+" ,-->
+    <!-- There are two types: using "link" and using "import" -->
+    <!-- if you will use import--- then copy url and paste it in "style" tag,  then copy the font-family and paste it.. -->
+    <!-- if you will use link---then copy the link and paste it in "head" tag, then copy the font-family and paste it.. -->
+    <!-- you can also add more than one fontstyle.... Select the types of fonts you want.Copy the url and paste it in the "head".And also copy the font-family and paste it.-->
+
+
+</body>
+</html>

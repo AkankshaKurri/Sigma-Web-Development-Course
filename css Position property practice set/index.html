@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        /* By default position static rehti hai...toh aap top,bottom,left, right,z-index yeh sab apply nhi kar sakte ho....With the help of position element we can apply top,bottom,left, right,z-index,etc */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+         .box{
+              border: 2px solid black;
+              height:10vh;
+              width: 80vw;
+              margin:10px;
+              padding:30px;
+         }
+
+         .box1{
+              background-color: blueviolet;
+              /*position: sticky;*/              /*sticky matlab navbar jaisa hota hai...navbar ke liye kaam aayega...ek jagah par hi rahega..jab tak woh navbar tak nhi pohuchege tab tak ke woh scroll nhi hoga.....jab pohuch jaayega toh woh scroll hoga..*/
+              /* top: 0px; */
+              position: absolute;            /*absolute nearest positioned element(koi uska ancestor positioned hai kya aise) dhundta hai........aur uske relative top,left,bottom,right values set karta hai(agar nhi mila toh html ke relative top,left,bottom,right values set karta hai)*/
+              top: 0px;                       /*top mei aayega box*/ 
+              bottom: 0px;                   /*bottom mei aayega box*/
+              left: 0px;                     /*left mei aayega box*/
+              right:0px;                      /*right mei aayega box*/
+         }
+
+         .box2{
+              background-color: aquamarine;
+              /* position:relative; */   /* position:relative likhna chahiye.... agar z-index use karna hai toh..... */
+              /*z-index:1;*/         /*jiska z-index jyada rahega woh wala box upar aayega...........*/
+         }
+
+         .box3{
+             background-color: aqua;
+             /*position:relative;/*           /*position:absolute ko jab position:relative dikhega toh iss ke relative top,bottom,left, right spacing laga dega*/
+             /*bottom:55px;*/                 /*yeh kiya toh....box upar jaayega....box3 ke upar box2 aayega.....agar box2 upar chahiye toh.....box2 mei position:relative aur z-index:1 likhna chahiye.........*/
+         }
+
+         .box4{
+             background-color:violet;
+             /*position:relative;
+             top:34px;
+             right:55px;
+             left:22px;*/
+             /*position:fixed; */     /*iska matlab yeh hai ke hum website ko scroll karenge na, toh yeh box fix rahega website pe... woh apni jagah se hatega nhi....(add wagere,cookies wagere ke liye kaam aata hai.chats ke liye aise*/ 
+             /*left: 76px;
+             bottom: 40px;*/
+         }
+
+         .parent{
+            padding:55px;
+            margin:45px;
+            border:9px solid purple ;
+            /* position:absolute; */
+            /* transform:translate(0); */
+            /* perspective:0em ; */
+            /* filter:invert(0); */
+         }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>  <!--agar hum yeh wale box mei position:absolute lagayenge ....toh woh check karega ke kya parent positioned hai,ya body positioned hai,ya head positioned hai,ya html positioned hai.....Agar parent positioned rahega toh parent ke relative top,bottom,left right lagega,and so on......(top:0px wagere yeh sab....)-->
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+
+        <!--Note: transform,filter,or perspective properties can also make an element appear as positioned..     -->
+    </div>
+</body>
+</html>

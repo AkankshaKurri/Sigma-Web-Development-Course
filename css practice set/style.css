@@ -1,0 +1,81 @@
+
+/* CSS Selectors */
+/* CSS selectors allow us to chooose specific elements and apply styles to them */
+   
+/* we can also select multiple selectors....
+   For example,here we selected two selectors--div and span */
+/* Element selector */
+div,span{
+    color: palevioletred;
+    background-color: blue;
+}
+
+/* Here we have selected single selector */
+p{
+    color:deeppink;
+    background-color: chartreuse;
+}
+
+/* Class Selector */
+.orange{
+    color: black;
+    background-color: orangered;
+}
+
+/* Id Selector */
+#red{
+    color: black;
+    background-color: red;
+}
+
+/* Child Selector */
+/* Iska matlab hai ke "div" ke andar hi "p" rehna chahiye */
+/* ismei  yeh ">" dena hai*/
+div > p {
+    color: black;
+    background-color: aqua ;
+}
+
+/* Descendant selector */
+/* Iska matlab yeh hai ke "span" ke andar "p" kidar bhi rahega toh chalega */
+/* Ismei space dena hai */
+span p{
+    color: black;
+    background-color: purple ;
+}
+
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pseudo selector */
+/* iska matlab jo hum link visit karenge na uska color darkgreen ho jaayenga */
+a:visited{
+    color: darkgreen;     
+}
+
+/* iska matlab jo hum link bana rhe hai uska color purple rahega */
+a:link{
+    color: purple;
+}
+
+/* iska matlab yeh hai ke jo hum link pe click karenge....woh link blue ho jaayega */
+a:active{
+    background-color:lightskyblue;
+}
+
+/* iska matlab yeh hai ke jab hum kisi bhi link pe hover karenge.......uska background pink ho jaayega */
+a:hover{
+    background-color: lightpink;
+}
+
+/* sirf first chid ka hi colour hi yeh aayega */
+h3:first-child{
+    color:black;
+    background-color: crimson;
+}
+
+
+

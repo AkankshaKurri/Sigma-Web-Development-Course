@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 20px;
+        }
+        .one{
+            background-color: violet;
+            width: 80vw;
+            height: 30vh;
+            box-sizing: border-box;
+            border: 2px solid purple;
+            text-align: center;
+            margin: auto;            /*agar aapko  particular thing center mei karna hai toh  app "margin:auto" use kar sakte ho..... but it is important that it should be "block level element".Div is block level element."Auto" matlab "left and right space"  */ 
+        }
+        .two{
+            background-color: violet;
+            width: 80vw;
+            /* height: 80vh; */
+            box-sizing: border-box;
+            border: 2px solid purple;
+            text-align: center;
+            margin: 23px auto;         /* "23px" matlab "top and bottom space" aur "auto" matlab "left and right space" */
+            /* font-size: 18px; */
+            min-height:80vh ;          /*box ki height kam-se-kam 80vh rahegi....Aur hum jitna bhi content add kar sakte hai...woh box apne aap adust karlegi...yeh benefit hsi min-height ka...*/
+        }
+        p{
+            /* font-size: 2em;*/           /*em-18(jo font-size use apply kiye the)*2=36px  without html code*/
+            /* font-size: 2em;*/          /*em-20(jo font-size use apply kiye the html se)*2=40px  with html code and without font size in class two*/
+             /*font-size: 2em;*/         /*em-18(jo font-size use apply kiye the)*2=36px  with html code and with font size in class two*/
+            font-size: 2rem;             /* rem-20(root element ka font-size)*2=40px*/
+        }
+
+        .three{
+            box-sizing: border-box;
+            border: 2px solid purple;
+            background-color:chartreuse ;
+            text-align: center;
+            margin: auto;        
+            font-size: 22px;
+            /* width:100vmin;                     */
+            width: 80vw;
+            margin: 23px auto;
+        }
+
+        .four{
+            background-color: violet;
+            width: 80vw;
+            height: 40vh;
+            box-sizing: border-box;
+            border: 2px solid purple;
+            text-align: center;
+            margin: auto;  
+        }
+
+        .four > div{
+            width: 50%;    /*iska parent hai class four....toh woh class four ka 50 percent dega width*/
+            border:2px solid purple; 
+        }
+
+        .four > div > div{
+            width: 50%;   /*iska parent hai (four>div) wala....toh woh (four>div) ka 50 percent dega width*/
+            border:2px solid greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- "px" hume jyada use nhi karna chahiye kyuki warna hamara website corrupted ho jaayega.. -->
+     <!-- It is good to use "vw-viewport width" and "vh-viewport height" then our website will look good on any device.. -->
+     <div class="one">
+       I am a box1<br>
+       vw and vh example
+       <br>
+       px-pixels
+       <br>
+       vh-1% of viewport height
+       <br>
+       vw-1% of viewport width
+       <br>
+       em-Font size of the element.
+       <br>
+       rem-Font size of the root element.
+       <br>
+       vmin-1% of viewport's smaller dimension.         <!-- phone mei vmin hoga "width" aur computer mei vmin hoga "height"(vh ke barabar)      -->
+       <br>
+       vmax-1% of viewport's larger dimension.          <!-- phone mei vmax hoga "vh" aur computer mei vmax hoga "vw"-->
+
+     </div>
+
+     <div class="two">
+        <p>em and rem example</p>
+        I am a box2
+        <br>
+        <!-- lorem999 -->                  <!--yeh execute karke dekh sakte ho...example of min-height-->
+     </div>
+
+     <div class="three">
+        vmin and vmax example<br>
+        I am a box3
+     </div>
+
+
+     <!-- Link for CSS values and units -->
+     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+
+
+     <div class="four">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla tempora est non eius incidunt similique fugiat libero quidem repudiandae, quis aut illo nostrum accusamus repellendus sed fugit perferendis! Nulla, vel!
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque maxime sunt laborum placeat corporis hic ipsum. Esse accusantium distinctio eaque tenetur explicabo laborum architecto autem quo eveniet! Nemo, quos!
+            </div>
+        </div>
+     </div>
+</body>
+</html>

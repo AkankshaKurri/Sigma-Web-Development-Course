@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <!-- Don't use css float and clear.Now it is of no use.I f you want to use style properties,then use flexbox.........Flexbox is very best property.....-->
+    <Style>
+        .cards{
+            border: 2px solid gold;
+            display: flow-root;       /*pehle image bahar aa rha tha,aur jab hum display:flow-root use karenge na toh image barabar cards ke andar adjust ho jaayegi*/
+        }
+         img{
+            float: left;   /*aise karenge na toh image left mei aayega aur content sab image ke right baju mei aayega....*/
+            /* float:right;*/ /*aise karenge na toh image right mei aayega aur content sab image ke left baju mei aayega.... */
+         }
+
+         .card{
+            border:2px solid green;
+         }
+
+         .card:nth-child(3){       /*iska matlab yeh hai ke card ke 3rd child ko....*/
+            background-color: violet;
+            /*clear:right;*/  /* iska matlab yeh hai ke mujhe mere right side mei kuch  float nhi hona chahaiye (float:right tha)*/
+            /*clear: left;*/   /* iska matlab yeh hai ke mujhe mere left  sidemei kuch float nhi hona chahaiye (float:left tha)*/
+            /*clear: both;*/   /*iska matlab yeh hai ke mujhe mere left side aur right side mei kuch bhi float nhi hona chahaiye*/
+         }
+
+    </Style>
+</head>
+<body>
+    <div class="cards">
+        <img src="bappa.jpg" alt="" width="144px">
+
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quia quo maiores tempora accusantium, cumque expedita provident fugiat in culpa labore, ab adipisci?</div>
+
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laudantium quaerat eos fugit omnis, numquam inventore temporibus hic cumque? Ab vel deleniti eveniet, minima doloribus quibusdam dolore quia temporibus et maxime placeat corrupti officia recusandae nobis, repudiandae ipsam tempore, optio ut odio esse dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dignissimos repudiandae nulla expedita iusto, quo, asperiores vitae dolorem, soluta odit perferendis unde temporibus aut id dolores sunt! At fugiat aspernatur debitis atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nemo nesciunt doloremque molestiae vero, quos error, quas quidem delectus cupiditate nihil sed dolorem officia deleniti aperiam. Maxime quam nisi suscipit cumque velit adipisci sequi.
+        </div>
+
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste, saepe illum dicta nobis corporis quia ut omnis asperiores odio, necessitatibus veniam animi quae unde explicabo expedita voluptatem delectus enim minima aliquid, eos minus sint! Ipsa voluptatibus voluptatem at consequuntur eveniet, earum ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, explicabo quae? Quo qui quisquam vitae nisi. Qui, numquam. Vitae id labore magnam, illum adipisci est necessitatibus et optio cupiditate doloremque, neque amet magni aliquid quasi distinctio, sequi aut exercitationem dolor ipsa cum voluptates laborum. Soluta perspiciatis qui asperiores eveniet? Corporis, voluptas consequuntur sed ratione explicabo necessitatibus. Enim reiciendis officiis illum. Atque consequuntur, repudiandae aspernatur ipsa est pariatur dolorum quia perferendis dicta et distinctio aut minima? Perspiciatis, fuga? Magnam deleniti deserunt animi laudantium.</div>
+    </div>
+</body>
+</html>

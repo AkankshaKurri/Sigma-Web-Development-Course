@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.box1{
+    background-color: darkorchid;
+    padding: 10px;
+    margin: 25px;
+    border:2px solid palevioletred;
+    height: 200px;     /* ismei sirf content ka height rahega.. border aur padding nhi rahega.. */
+    box-sizing: border-box;   /* border-box matllab--height which includes combination of content+border+padding, */
+                             /* 176.8 content + 20 padding + 3 padding = 199.8 ~ 200*/
+}
+
+.box2{
+    background-color:chartreuse ;
+    padding: 10px;
+    margin: 25px;
+    border:2px solid black;
+    height: 200px;     /* ismei sirf content ka height rahega.. borderaur padding nhi rahega.. */
+    box-sizing: border-box;   /* border-box matllab--height which includes combination of content+border+padding, */
+}    

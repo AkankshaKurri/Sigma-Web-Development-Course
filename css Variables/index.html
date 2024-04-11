@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        :root{                                                /*global variable*/
+            --color:blue;
+            --seccolor:rgba(0, 162, 255, 0.799);
+            --defpad:33px;
+            --defop:0.2;
+        }
+    
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            /* background-color: rgb(26, 245, 150); */         /*normally giving color by vscode */
+            /*background-color:var(--color);*/                    /*color giving by using global tempore omnis quaerat harum dicta facilis illum veniam! Assumenda deserunt vero aliquid expedita vitae! Eos maiores expedita quos maxime amet, labore livariable*/
+            --localcolor1:violet;                                 /*color giving by using local variable*/
+            background-color: var(--localcolor1);
+        }
+        
+        ul li{
+            list-style: none;
+            padding:var(--defpad);
+            border:2px solid var(--color);
+            opacity:var(--defop);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li:first-child{
+            /*--color:yellow; /*         /*color giving by using local variable..*/
+           /* background-color: var(--color);*/
+
+           background-color: var(--colors,yellow); /*samjho agar "--colors" naam ki variable exist hi nhi karti ho......... toh comma ke baad jo colour likhoge woh colour apply hoga..*/
+        }
+        .container{
+            /* background-color:rgba(43, 219, 108, 0.708); */     /*normally giving color by using vscode*/
+            /*background-color: var(--seccolor); */                    /*color giving by using global variable*/
+            --localcolor2:rgb(215, 59, 215);                         /*color giving by using local variable*/
+            background-color: var(--localcolor2);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container"">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, nihil. Rem at velit quaerat. Maxime minus tempore omnis quaerat harum dicta facilis illum veniam! Assumenda deserunt vero aliquid expedita vitae! Eos maiores expedita quos maxime amet, labore libero illum nisi et. Aperiam error dicta quas!
+    </div>
+</body>
+</html>

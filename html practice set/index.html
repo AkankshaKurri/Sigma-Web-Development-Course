@@ -30,6 +30,7 @@ It is the portion of the software that does not come in direct contact with user
 
 
 <h1>Paragraph tag</h1>
+<!--Sometimes all lines come in same line only. Therefore at that time you should "go to settings" and then go to"command palalette" and "go to view:toggle word wrap.-->
 <!--Paragraphs likh ne ke liye p ka use karte hai.Aur dummy paragraph ke liye "lorem34/lorem10" use kaarte hai.Example niche hai-->
 <p>1.abcdefghijklmnopqrstuvwxyz</p>
 <p>2.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui modi nisi quaerat, doloribus sequi optio, dicta distinctio velit dolore rem dolores blanditiis. Dolores quas vero provident consequuntur voluptates, impedit iusto harum sapiente. Iure, natus.</p>
@@ -41,6 +42,7 @@ It is the portion of the software that does not come in direct contact with user
 
 
 <!--Headings ke liye "h1 h2 h3 h4 h5 h6" use kar sakte hai.Example niche hai.-->
+<!--this is used for more important or least important tags-->
 <h1>Heading tag</h1>
 <h1>1.abcdefghijklmnopqrstuvwxyz</h1>
 <h2>2.abcdefghijklmnopqrstuvwxyz</h2>
@@ -52,8 +54,8 @@ It is the portion of the software that does not come in direct contact with user
 
 <h1>Anchor tag</h1>
 <!--anchor tag link banane ke liye kaam aat hai.Link ko click karte hi hum woh website pe chale jate hai.Example niche hai-->
-<!--(_blank)->Load the URL into a new browsing context. This is usually a tab, but users can configure browsers to use new windows instead.Anchor tag mein 1 attribute use kar sakte haitarget).-->
-<a target="_blank""https://www.google.com/">Google</a>
+<!--(_blank)->Load the URL into a new browsing context. This is usually a tab, but users can configure browsers to use new windows instead.Anchor tag mein 1 attribute use kar sakte hai target).-->
+<a target="_blank" "https://www.google.com/">Google</a>     
 <hr>
 <a href="https://www.codewithharry.com/">CodeWithHarry</a>
 <hr>
@@ -66,7 +68,7 @@ It is the portion of the software that does not come in direct contact with user
 
 <h1>Image Tag</h1>
 <!--Image tag use karte hai image dikhane ke liye website pe.Image tag ke 3 attributes hai-1.src,2.alt,3.height(width bhi hai,lekin hume use nahi karna chahiye.)-->
-<img src="bappa.png" alt="Ganpati bappa" height="200">
+<img src="bappa.png" alt="Not able to Load" height="200" title="Ganpati Bappa">    <!--Title likhte hai na toh jaise hi image mei hover karenge na toh jo apun title likhe hai na woh aayega-->
 <hr>
 
 <h1>Table tag</h1>
@@ -395,6 +397,75 @@ Here are some commonly used character sets:<br>
 --->Understanding and specifying the correct character set is crucial for creating web pages that render text accurately across different platforms and languages. UTF-8 is the most commonly used and recommended character set due to its wide applicability and support.
 </dd>
 <hr>
+
+<strong>Bold text</strong>     <!--strong,b yeh dono text ko bold karta hai-->
+<b>Bold text</b>
+<em> Italic text</em>          <!--em,i yeh dono text ko italic karta hai -->
+<i>Italic text</i>
+<u>Underline text</u>
+<small>This tag shows small text</small>            <!--this tag shows small text-->
+<big>This tag shows big text</big>                  <!--this tag shows big text -->
+<p>H<sub>2</sub>o</p>                               <!--this is subscript tag-->
+<p>3<sup>2</sup>=9</p>                              <!--this is superscript tag-->
+<hr>
+
+ <!--this is action in form-->
+ <form action="/action.php">
+    <h5>REGISTRATION FORM</h5>            
+     <!--this is form element:input-->
+     <input type="text" placeholder="Username">
+     </br>
+     <!--this is also form element:input-->
+     <input type="password" placeholder="password">
+     </br>    
+     <h5>SELECT YOUR CLASS</h5>        
+     <label for="id1">
+     <input type="radio" value="class XII" name="class" id="id1">class XII
+     </label>
+     </br>    
+     <label for="id2">
+     <input type="radio" value="class XI" name="class" id="id2">class XI  
+     </label>  
+     </br>
+     <!--this is a checkbox tag-->        
+     <h5>SELECT YOUR SUBJECT</h5>          
+     <label for="math">
+     <input type="checkbox" value="name" name="subject" id="101">math
+     </label>
+     </br>
+     <label for="physics">
+     <input type="checkbox" value="name" name="subject" id="102">physics
+     </label>
+     </br>
+     <label for="chemistry">
+     <input type="checkbox" value="name" name="subject" id="103">chemistry
+     </label> 
+     </br> 
+     <label for="biology">
+     <input type="checkbox" value="name" name="subject" id="104">biology
+     </label>
+     <br>            
+     <!--This is a select tag.This is used for dropdown-->   
+     <h5>SELECT YOUR CITY</h5> 
+     <select name="city" id="city">
+     <option value="delhi"> delhi</option>  
+     <option value="mumbai"> mumbai</option>
+     <option value="bangalore"> bangalore</option>
+     </select>
+     <br>            
+     <h5> FEEDBACK</h5>            
+     <!--This is feedback-->
+     <textarea name="feedback" id="101" placeholder="please give your feedback"rows=5>feedback</textarea>
+     <br>
+     <!--this is submit-->        
+     <input type="submit" value="submit">
+     <hr>
+     <!--this is iframe tag-->  
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe>
+     </br>
+     <iframe src="https://www.bing.com" frameborder="0" width="892px"></iframe>
+     <hr>
+ </form>  
 
 <script src="script.js"></script>
 </body>

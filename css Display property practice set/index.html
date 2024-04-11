@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dislay Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+          border:2px solid blue;
+          /* display:inline;*/         /* Inline karenge toh box ek ke baju mei ek box aayega.. aur box ke top mei margin,padding apply nhi hoga aur width of box bhi nhi badega */
+          display: inline-block;
+          padding: 45px;               /* padding will be not applied to the top i f the display is inline.You can do inline-block..  */
+          margin:45px;
+          /*display:flex;*/           /*flex karenge toh box ek ke niche ek aayega*/
+          display:inline-flex;    /* Inline-flex karenge toh box ek ke baju mei ek box aayega.. */
+          justify-content:center;
+        }
+
+        .box1{
+            /* display:none;*/        /*Tbox bhi gaayab ho jaayega,aur space occupied by box bhi gaayab ho jaayega */
+            visibility: hidden;    /* box gaayab ho jaayega,lekin space occupied by box rahega*/
+        }
+
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-Us/docs/Web/CSS/display -->
+    <div class="box">                    <!--Div is a block-level element-->
+        I am a box1  
+    </div>
+    <div class="box">
+        I am a box2
+    </div>
+    <div class="box box1">
+        I am a box3
+    </div>
+    <span>                                <!--Span is a inline element-->
+        I am a box3
+    </span>
+    <span>
+        I am a box4
+    </span>
+</body>
+</html>

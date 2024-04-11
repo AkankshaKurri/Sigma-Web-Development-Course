@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+      *{
+        background-color: violet;                /*Universal selector*/
+      }
+
+       h4{
+         color: orangered;                     /*Element selector*/
+      }
+
+       #one{
+         color: chartreuse;                    /*Id selector*/
+       }
+
+       .a{
+        color:aqua;                           /*class selector*/
+       }
+
+       .b{
+        color: blueviolet;                    /*class selector*/
+       }
+
+       .c{
+        color:crimson;                       /*class selector*/
+       }
+       
+       [data-x=d]{
+        background-color: yellow;            /*Attribute selector*/
+       }
+
+       p{
+          color: darkgreen !important;                            /* Important example.. */
+       }
+
+       p{
+        color:gray
+       }
+
+</style>
+</head>
+<body>
+    <!-- CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules. -->
+    <!-- It is a value or weight assigned to a CSS selector. The higher the specificity, the more precedence the selector has. -->
+
+    <!-- 1. Position and order of appearance: the order in which your CSS rules appear -->
+    <!-- 2. Specificity: an algorithm that determines which CSS selector has the strongest match -->
+    <!-- 3. Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS -->
+    <!-- 4. Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type -->
+
+    <!-- So, the order of specificity is: -->
+    <!-- Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+    <h1 style="color: blue;">
+        CSS Specificity Example..
+        direct inline style se colour apply kiya hai....
+        first preference is inline style...
+    </h1>
+
+    <h2 id="one">
+        CSS Specificity example...
+        second preference is ID selector
+   </h2>
+
+   <h3  class="a b c" data-x="d">
+    CSS Specificity example...
+    Third preference is Class or Attribute selector.
+    Jitne bhi hum classes denge last wala apply hoga.....
+   </h3>
+
+   <h4>
+    CSS Specificity example...
+    Fourth preference is Element selector......
+   </h4>
+
+   <h5>
+    Fifth preference is Universal selector..................
+   </h5>
+
+   <!-- The !important flag in CSS is used to give a particular style rule the highest level of importance, overriding any other competing styles. When you add !important to a CSS rule, it will take precedence over other rules affecting the same element, regardless of their specificity -->
+
+   <p>
+      Important example... 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ducimus eos quaerat delectus, incidunt quidem ex eligendi aperiam soluta esse ea, eius tempora, cupiditate velit molestias quo assumenda? Eos, sapiente?
+   </p>
+
+   <!-- To calculate specificity, assign a value to each part of the selector: -->
+
+   <!-- Universal Selector: 0 -->
+   <!-- Element selectors and pseudo-elements: 1 -->
+   <!-- Class selectors, attribute selectors, and pseudo-classes: 10 -->
+   <!-- ID selectors: 100 -->
+   <!-- Inline styles: 1000 -->
+   <!-- an !important at the end of a CSS value gets a specificity score of 10,000 points. This is the highest specificity that one individual item can get.However, it's generally best to use !important sparingly, as it can make debugging and maintaining your stylesheets more complicated. It can override styles in ways that are hard to trace, leading to unexpected results. -->
+   
+<!--   
+   * ---  the specificity of this universal selector is 0
+   h4 --- the specificity of this element selector is 100
+   #one --- the specificityof this ID selector is 100
+   .a ---- the specificity of this class selector is 10
+   .b ---- the specificity of this class selector is 10
+   .c --- the specificity of this class selector is 10
+   [data-x=d] --- the specificity of this attribute selector is 10
+   p --- the specificity of this element selector is 1
+   p ---  the specificity of this element selector is 1 
+-->
+
+<!-- 
+Quiz
+  a.harryclass.rohan-class[href]:hover --- the specificity of this (element+class+class+attribute+pseudo class) selector is (1+10+10+10+10) =41 
+-->
+
+</body>
+</html>

@@ -8,10 +8,9 @@ let a = [1,93,5,6,88]
 
 
 //foreach loop:calls a function,once for each array element
-
-// a.forEach((value,index,arr) => {
-//     console.log(value,index,arr)
-// })
+//  a.forEach((value,index,arr) => {
+//      console.log(value,index,arr)
+//  })
 
 
 //for in loop:for in loop can be used to get the keys from an array

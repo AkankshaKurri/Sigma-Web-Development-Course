@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Document Object Model(DOM)
+    Dom represents the page content as HTML
+
+    Mapping is the entire document's inner object 
+
+    this is used to change title
+    this is used to change document background(inline css)
+    it is used to print title in console
+    it is used to print document body in console
+    e.g. open console
+         you can see there..
+    -->     
+
+    <!--
+        Browser Onject Model(BOM)
+
+        The Browser Object Model(BOM) represents additional objects provided by the browser(host environment) for working with everything except the document
+
+        The functions alert/confirm/prompt are also a part of the BOM
+       
+       e.g.open console
+           write window     //window will be printed
+           write window.document   //document will be printed
+           window.document.body    //body will be printed
+
+
+        To change anything in the document  
+        we can use "$0" to refer that object of the document
+        e.g. select that particular object.
+             click on inspect
+             write $0   //to refer that object
+             write $0.style.backgroundColor ="green"
+             color of that particular objrct will change to green
+
+    -->
+
+    <img src="BOM.png" alt="">
+    <script>
+        document.title = "Akanksha is good" 
+        console.log(document.title)   //console mei print hoga
+        console.log(document.body)   //console mei print hoga
+        document.body.style.backgroundColor = "green"  //used as inline css
+    </script>
+</body>
+</html>

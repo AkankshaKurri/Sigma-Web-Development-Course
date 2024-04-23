@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 25px;
+            width: 25px;
+            padding: 32px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--  
+        open console
+        "Hello World will be printed"
+
+        write this to access body
+        document.body
+        "body will be printed"
+   
+        write this to access chid nodes
+        document.body.childNodes
+        "all child nodes will be printed"
+
+        write this to access first child node
+        document.body.childNodes[0] 
+        "text(matlab space) will be printed"
+    
+        similarly write this to access next child node
+        document.body.childNodes[1]
+        "comment will be printed"
+
+        document.body.childNodes[2]
+        "text will be printed"
+
+        document.body.childNodes[3]
+        "div will be printed"
+
+        Now to access div's child nodes write this
+        document.body.childNodes[3].childNodes
+        "div ke child will be printed"
+ 
+        to print first child
+        let cont=document.body.childNodes[3]
+        "<div class=​"container">​…​</div>​ will be printed"
+        cont.firstChild
+        "#text will be printed"
+
+        to print last child
+        cont.lastChild
+        "#text will be printed"
+
+        to print first child that must be element
+        cont.firstElementChild
+        "<div class=​"box">box1​</div>​ first child will be printed"
+
+        to print last child that must be element
+        cont.lastElementChild
+        "<div class=​"box">box5​</div> last child will be printed"
+        
+        to change color of the element
+        cont.lastElementChild.style.color="white"
+        'white will be printed and text color will be changed to white'
+
+        cont.lastElementChild.style.backgroundColor="pink"
+        'pink will be printed and background color will changed to pink'
+        ​
+        cont.lastElementChild.parentElement
+        "<div class=​"container">​…​</div> parent will be printed"
+
+        document.body.firstElementChild.children[0]
+        "<div class=​"box">​box1​</div>​"
+
+        document.body.firstElementChild.children[1]
+        "<div class=​"box">​box2​</div>​"
+
+        document.body.firstElementChild.children[2]
+        "<div class=​"box">​box3​</div>"
+        ​
+        document.body.firstElementChild.children[3]
+        "<div class=​"box">​box4​</div>"
+        ​
+        document.body.firstElementChild.children[4]
+        "<div class=​"box">​box5​</div>"
+        
+        to access next sibling element
+        document.body.firstElementChild.children[3].nextElementSibling
+        <div class=​"box">​box5​</div>​​
+
+        to access previous sibling element
+        document.body.firstElementChild.children[3].previousElementSibling
+        "<div class=​"box">​box3​</div>​ sibling element will be printed"
+
+        to access only previous sibling
+        document.body.firstElementChild.children[3].previousSibling
+        "#text"
+    
+     -->
+
+     <!-- 
+        
+        document.body.children
+        HTMLCollection(3) [div.container, table, script]
+
+        to access table
+        document.body.children[1]
+        "<table>​…​</table>​"
+
+        //next sibling(element)
+        document.body.children[1].nextElementSibling
+        <script src=​"script.js">​</script>​
+ 
+        //table.rows:collection of tr elements
+        to access rows
+        document.body.children[1].rows
+        "HTMLCollection(8) [tr, tr, tr, tr, tr, tr, tr, tr]"
+
+        to access columns
+        document.body.children[1].columns
+        "undefined"
+
+        //table.caption : reference to <caption
+        to access caption
+        document.body.children[1].caption
+        "<caption>​Personal Info​</caption>​"
+
+        //table.tHead : reference to <thead>
+        document.body.children[1].tHead
+        "<thead>....</thead>"
+
+        //table.tfoot : reference to <tfoot>
+        document.body.children[1].tfoot
+        "undefined"
+
+        //table.tBodies : collection of <tbody> elements
+        document.body.children[1].tBodies
+        HTMLCollection [tbody]
+
+
+
+        //tbody.rows : collection of <tr> inside
+        //tr.cells : collection of td and th
+        //tr.sectionRowIndex : Index of tr inside enclosing element
+        //tr.rowIndex : Row number starting from 0
+        //td.cellIndex : no. of cells inside enclosing <tr>
+
+      -->
+
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+
+
+    <table border="1">
+        <caption>Personal Info</caption>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Rollno</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Akanksha</td>
+                <td>2223534</td>
+            </tr>
+            <tr>
+                <td>Uma</td>
+                <td>2223535</td>
+            </tr>
+            <tr>
+                <td>Lalit</td>
+                <td>2223536</td>
+            </tr>
+            <tr>
+                <td>Ramesh</td>
+                <td>2223536</td>
+            </tr>
+            <tr>
+                <td>Mahalaxmi</td>
+                <td>2223537</td>
+            </tr>
+            <tr>
+                <td>Sarojini</td>
+                <td>2223538</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td  colspan="2">Student Information</td>
+        </tfoot>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

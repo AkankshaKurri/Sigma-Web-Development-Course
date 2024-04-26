@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- hidden ho jaaayega container
+    <div class="container" hidden>
+        <div class="box">Hey I am a Box1</div>
+        <div class="box">Hey I am a Box2</div>
+    </div> -->
+    <div class="container red bg-green" data-createdby="akanksha" data-connceptby="harry">
+        <div class="box">Hey I am a Box1</div>
+        <div class="box">Hey I am a Box2</div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
+
+<!--
+
+document.querySelector(".box")
+output : <div class=​"box">​Hey I am a Box1​</div>​
+
+
+document.querySelector(".box").innerText
+output : 'Hey I am a Box1'
+
+
+document.querySelector(".container").innerText
+output : 'Hey I am a Box1\nHey I am a Box2'
+
+
+
+//innerHTML : The innerHTML property allows to get the HTML inside the element as a string(valid for element nodes only)
+//innerHTML is valid only for element nodes.For other node types we can use nodeValue or data
+
+document.querySelector(".container").innerHTML
+output : '\n        <div class="box">Hey I am a Box1</div>\n        <div class="box">Hey I am a Box2</div>\n    '
+
+document.querySelector(".box").innerHTML
+output : 'Hey I am a Box1' 
+
+
+
+//yahape jo pehla text rahega woh change ho jaayega
+
+document.querySelector(".box").innerHTML = "Hey I am Akanksha"
+output : 'Hey I am Akanksha'
+
+
+
+//outerHTML : The outerHTMl property contains the full HTML,innerHTML + the element itself
+
+
+document.querySelector(".container").outerHTML
+output : '<div class="container">\n        <div class="box">Hey I am a Box1</div>\n        <div class="box">Hey I am a Box2</div>\n    </div>'
+
+
+
+//tagName/nodeName : Used to read tag name of an element.
+//tagName : only exists for element nodes only
+//nodeName : defined for any node(text,comment,etc)
+
+document.querySelector(".container").tagName
+output : 'DIV'
+
+document.querySelector(".box").tagName
+output : 'DIV'
+
+document.querySelector(".container").nodeName
+output : 'DIV'
+
+document.querySelector(".box").nodeName
+output : 'DIV'
+
+
+
+//textContent : Provides access to the text inside the element : only text,minus all tags
+
+document.querySelector(".box").textContent
+output : 'Hey I am a Box1'
+
+document.querySelector(".container").textContent
+output : '\n        Hey I am a Box1\n        Hey I am a Box2\n   
+
+
+
+//The hidden property : THe "hidden" attribute and the DOM property specifies whether the element is visible or not
+
+document.querySelector(".container").hidden
+output : false
+
+document.querySelector(".container").hidden = true
+output : true
+
+document.querySelector(".container").hidden
+output : true
+
+---toh container hidden ho jaayega---
+---container ke div element mei hidden laga dega---
+
+another way
+<div id = "element"> I will be hidden</div>
+
+<script>
+    element.hidden = true;
+</script>
+
+
+//elem.hasAttribute(name) : Method to check for existence of an attribute
+
+document.querySelector(".box").hasAttribute("style")
+output : false
+
+//elem.setAttribute(name,value) : Method used to set the value of an attribute
+
+document.querySelector(".box").setAttribute("style", "display: inline")
+output : undefined
+--style set hoo jaayega---
+
+//elem.getAttribute(name) : Method used to get the value of an attribute
+
+document.querySelector(".box").getAttribute("style")
+output : 'display: inline'
+
+//elem.attributes : Method to get the collection of all attribute
+
+document.querySelector(".box").attributes
+output : NamedNodeMap {0: class, 1: style, class: class, style: style, length: 2}
+
+//elem.removeAttribute(name) : Method to remove the attribute from elem
+
+document.querySelector(".box").removeAttribute("style")
+output : undefined
+---style remove ho jaayega---
+
+document.designMode = "on"
+--you can change website by simply writing in console this---
+
+
+//data -* attributes
+We can always create custom attributes but the ones starting with "data-" are reserved for programmers use.They are available in a property named dataset.If an element has an attribute named "data-one",its available as element.dataset.one
+
+
+document.querySelector(".container").dataset
+output : DOMStringMap {createdby: 'akanksha', connceptby: 'harry'}
+
+
+
+-->

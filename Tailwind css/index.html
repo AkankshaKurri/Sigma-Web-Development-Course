@@ -1,0 +1,53 @@
+<!-- taiwind css agar practice karna hai toh yeh website pe jaa -->
+<!-- https://play.tailwindcss.com/ -->
+
+<!-- how to install taiwind css -->
+<!-- npm init -y --> 
+<!-- Then follow the instructions given on this website
+     https://tailwindcss.com/docs/installation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <nav class="bg-purple-400 text-white border-l flex justify-between max-sm:flex-col">
+        <div class="logo max-sm:m-auto">
+            Akanksha
+        </div>
+        <ul class="flex space-x-5 max-sm:m-auto">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <main>
+        Tailwind generates a corresponding max-* modifier for each breakpoint, so out of the box the following modifiers are available:
+
+        Modifier	Media query
+        max-sm	@media not all and (min-width: 640px) { ... }
+        max-md	@media not all and (min-width: 768px) { ... }
+        max-lg	@media not all and (min-width: 1024px) { ... }
+        max-xl	@media not all and (min-width: 1280px) { ... }
+        max-2xl	@media not all and (min-width: 1536px) { ... }
+
+        There are five breakpoints by default, inspired by common device resolutions:
+
+        Breakpoint prefix	Minimum width	CSS
+        sm	640px	@media (min-width: 640px) { ... }
+        md	768px	@media (min-width: 768px) { ... }
+        lg	1024px	@media (min-width: 1024px) { ... }
+        xl	1280px	@media (min-width: 1280px) { ... }
+        2xl	1536px	@media (min-width: 1536px) { ... }
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
